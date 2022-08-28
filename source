@@ -1,0 +1,64 @@
+#include "stdafx.h"
+#include <conio.h>
+int YearCar(void);
+void ModelCar(void);
+
+//////////////////////////////////////////////////////////////////////
+//this function gets the car year and if it dosn't find 2015 it will repeat
+//returns YearCar
+////////////////////////////////////////////////////////////////////
+int main()
+{
+	int Selection = 0;
+	int CarYear = 0;
+	int CarModel = 0;
+	int Recite = 0;
+	while (CarYear != 9999)
+	{
+		printf("Is there a car you would like to check for recall?\n");
+		CarYear = YearCar();
+		printf("the Year your car was manufactured is %d\n\n", CarYear);
+		if (CarYear == 2015)
+		{
+			ModelCar();
+		}
+		else 
+		{
+			printf("Your car is not up for recall\n\n");
+		}
+		
+	}
+	
+}
+/////////////////////////////////////////////////////////////
+//this function stores the value of the car's year
+//inputs YearCar
+/////////////////////////////////////////////////////////////
+int YearCar(void)
+{
+	int Year = 0;
+	printf("What year is your car or if you would like to exit enter a 1.\n");
+	scanf_s("%d", &Year);
+	return Year;
+}
+///////////////////////////////////////////////////////////
+//this function stores the value of the model.
+////////////////////////////////////////////////////////////
+void ModelCar(void)
+{
+	int number = 0;
+	printf("Please enter the model number of your car\n");
+	scanf_s("%d", &number);
+	if ((number == 10) || (number == 150) || (number == 950) || (number == 4592))
+	{
+		printf("Your car is up for a recall please contact your dealership\n\n");
+	}
+	else if ((number >= 610) && (number <= 628))
+	{
+		printf("Your car is up for a recall please contact your dealership\n\n");
+	}
+	else
+	{
+		printf("Your car is not on the recall list\n");
+	}
+}
