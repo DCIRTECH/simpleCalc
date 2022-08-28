@@ -1,0 +1,26 @@
+10-11 include vital commands needed to run programs on windows OS
+12-13 prototype the functions named YearCar and ModelCar
+20-24 initialize variables
+24 starts a while loop with the condition CarYear is not 9999
+26 prints to the console if you have a car to check for recall
+27 points to the function YearCar(); and sets it equal to CarYear
+28 another printout that prints the year the car was manufactured
+29 starts an if statement with the condition the year is 2015
+31 call function ModelCar();
+33 if the ifstatement dosnt go through this is activated
+35 says the car is not for recall
+45 starts the Yearcar fuction and it returns an int
+47 initial variable
+48 prints asking for the car year or how to leave
+49 scans the keyboard for numbers and stores in a variable
+50 returns the int stored inside of line 49 to the main function
+55 starts the ModelCar function
+57 Variablie initiation
+58 asks for the model number of the car
+59 scans and stores numbers inside the variable
+60 checks the model number against other numbers to see if any of them match
+62 prints out to go see a dealership
+64 is an else if for the numbers between 610 and 628
+66 same as 64
+68 is a default
+70 prints out that the car is not on a recall list
